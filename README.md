@@ -9,7 +9,7 @@ steps show how to enable the Gmail API and download the client ID to your local
 machine.
 
 1.  Enable the Gmail API using the [the Gmail API page in the GCP Console][console_gmail].
-1.  Find the [GCP region][docs_regions] you want to deploy your function to.
+1. Find the [GCP region][docs_regions] you want to deploy your function to.
     (In general, response time is quickest for the regions closest to you.) For
     the rest of this tutorial, replace `[YOUR_GCF_REGION]` with your selected
     region's name (for example, `us-central1`).
