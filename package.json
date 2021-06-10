@@ -14,7 +14,9 @@
   "scripts": {
     "fix": "semistandard --fix",
     "lint": "semistandard",
-    "test": "mocha"
+    "test": "mocha",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "dependencies": {
     "@google-cloud/datastore": "^5.0.0",
@@ -23,13 +25,17 @@
     "cheerio": "^1.0.0-rc.2",
     "googleapis": "^63.0.0",
     "nconf": "^0.11.0",
-    "pify": "^4.0.0"
+    "pify": "^4.0.0",
+    "snyk": "^1.628.0"
   },
   "devDependencies": {
     "mocha": "^8.0.0",
     "semistandard": "^14.0.1"
   },
   "semistandard": {
-    "env": [ "mocha" ]
-  }
+    "env": [
+      "mocha"
+    ]
+  },
+  "snyk": true
 }
